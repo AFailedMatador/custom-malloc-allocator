@@ -1,5 +1,7 @@
 # Custom Malloc Allocator
 
+*Built for CMSC 14400 (Systems Programming II), University of Chicago.*
+
 A heap memory allocator implemented from scratch in C (`smalloc.c`), providing `malloc`/`free`-style memory management without relying on the system allocator.
 
 ## Design
