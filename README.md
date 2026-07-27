@@ -18,8 +18,9 @@ make
 
 ## Testing
 
-`traces/` contains 15 allocation/free traces (including edge cases like double-free and coalescing scenarios) with corresponding known-good results in `expected_outputs/`. `grading.py` replays each trace, checks the output against the expected result, and scores correctness across the full suite.
+`traces/` contains 15 allocation/free traces (including edge cases like double-free and coalescing scenarios) with corresponding known-good results in `expected_outputs/`. Run a trace through `test` and diff the output against the expected result:
 
 ```bash
-python3 grading.py
+./test -t traces/short1-bal.txt -o outputs/short1-bal.out
+diff outputs/short1-bal.out expected_outputs/short1-bal.out
 ```
